@@ -17,7 +17,7 @@ function SidePanel() {
                     children: [
                         {
                             label: "Extended Benefit (EB)",
-                            children: ["207 Nonmonitary Determinations Activity [EB] [OMB No 1205-0154]", "218 Benefit Rights and Experience [EB] [OMB No. 1205-0177]", "5130 Benefit Appeals [EB] [OMB No. 1205-0172]", "5159 Claims and Payment Activities [EB] [OMB No. 1205-0010]"],
+                            children: ["207 Nonmonitary Determinations Activity [EB] [OMB No 1205-0154]"],
                         },
                         {
                             label: "Temporary Extended Unemployment Compansation (TEUC)",
@@ -25,7 +25,7 @@ function SidePanel() {
                         },
                         {
                             label: "Emergency Unemployment Compansation 2008 (EUC 2008)",
-                            benefits: ["207 Nonmonitary Determinations Activity [EB] [OMB No 1205-0154]", "218 Benefit Rights and Experience [EB] [OMB No. 1205-0177]", "5130 Benefit Appeals [EB] [OMB No. 1205-0172]", "5159 Claims and Payment Activities [EB] [OMB No. 1205-0010]"],
+                            children: ["207 Nonmonitary Determinations Activity [EB] [OMB No 1205-0154]", "218 Benefit Rights and Experience [EB] [OMB No. 1205-0177]"],
                         }
                     ]
                 },

@@ -1,3 +1,10 @@
-.accordian-menu-container{
-    border: 1px solid red;
+.Mui-expanded > .MuiAccordionSummary-root{
+    margin: 0 !important;
+    background: #e8e9ed !important;
+    min-height: 30px !important;
+
+}
+.MuiAccordionSummary-content{
+    margin: 0 !important;
+    font-weight: 500 !important;
 }

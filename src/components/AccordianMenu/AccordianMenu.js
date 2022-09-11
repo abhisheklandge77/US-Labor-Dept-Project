@@ -9,15 +9,14 @@ function AccordianMenu(props) {
   const { accordianDetails } = props;
 
   const renderNestedAccordian = (details) => {
-    console.log("details::::", details);
 
     return details.map((record, index) => {
       return (
-        <Accordion key={index}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />} >
+        <Accordion key={index} className="accordian">
+          <AccordionSummary className="accordian-title" expandIcon={<ExpandMoreIcon />} >
             <p>{record?.label}</p>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="accordian-details">
             {renderAccordianDetails(record)}
           </AccordionDetails>
         </Accordion>
@@ -27,15 +26,14 @@ function AccordianMenu(props) {
 
   const renderAccordianDetails = (record) => {
     if (record?.children?.length) {
-
-      return record?.children.map((d, i) => {
-        if(d?.label){
-            const arr = renderNestedAccordian(d?.children);
-            return arr;
-          }else{
-              return <div key={i}><p>{d}</p></div>
-          }
-      })
+      if (record?.children[0]?.label) {
+        const arr = renderNestedAccordian(record?.children);
+        return arr;
+      } else {
+        return record?.children.map((d, i) => {
+          return <div key={i}><p>{d}</p></div>
+        })
+      }
     }
   };
 
