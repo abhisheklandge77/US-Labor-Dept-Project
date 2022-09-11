@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import logo from "../../assets/logo-us-labor-dept.svg";
+import PersonIcon from '@mui/icons-material/Person';
 
 function Navbar(props) {
   const { activeTab, setActiveTab } = props;
@@ -30,7 +31,7 @@ function Navbar(props) {
           })}
         </Tabs>
         <div className="user-icon">
-          <p>User</p>
+          <PersonIcon />
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ function SidePanel() {
             <h3>AR - Applications Menu</h3>
 
             <div className="searchInput-container">
-                <input className="searchInput" value={searchText} onChange={(e) => setSearchText(e.target.value)} placeholder="Search" />
+                <input className="searchInput" value={searchText} onChange={(e) => setSearchText(e.target.value)} placeholder="&#x1F50E;&#xFE0E; Search" />
             </div>
 
             <div className="menu-container">
