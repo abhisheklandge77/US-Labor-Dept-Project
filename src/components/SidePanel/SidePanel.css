@@ -1,0 +1,24 @@
+.side-panel-container{
+    width: 18%;
+    padding: 1rem .5rem;
+    border-right: 1px solid #e8e9ed;
+}
+.searchInput-container{
+    width: 100%;
+}
+.searchInput{
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    background-color: #e8e9ed;
+    border-radius: 5px;
+    margin-left: .5rem;
+    width: 80%;
+}
+.menu-container{
+    padding: .7rem .5rem;
+}
+.menu-name{
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}

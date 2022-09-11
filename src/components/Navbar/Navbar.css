@@ -1,0 +1,42 @@
+.header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: .7rem 0;
+}
+.logo{
+  border-radius: 50%;
+  margin: 0 1rem;
+  width: 60px;
+  height: 60px;
+}
+.logo img{
+  width: 100%;
+}
+.navbar-container {
+  width: 100%;
+  background-color: #0071bc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav-tab {
+  margin: 0 1rem;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+.MuiTabs-indicator{
+  background-color: #fff !important;
+  height: 5px !important;
+}
+.user-icon {
+  margin-right: 1rem;
+  color: #fff;
+}
