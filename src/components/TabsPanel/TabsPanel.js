@@ -1,13 +1,14 @@
 import React from "react";
+import { componentMap, USLaborTabs } from "../../UsLaborData";
 import UnemploymentInsuranceReports from "../UnemploymentInsuranceReports/UnemploymentInsuranceReports";
 import "./TabsPanel.css";
 
-function TabsPanel({ activeTab }) {
+function TabsPanel({ activeTab, activeMenu }) {
     
   const renderTabPanel = (tabValue) => {
     switch (tabValue) {
       case 0:
-        return <div><h2>Data Validation</h2></div>
+        return componentMap[USLaborTabs[activeTab]][activeMenu];
 
       case 1:
         return <UnemploymentInsuranceReports />

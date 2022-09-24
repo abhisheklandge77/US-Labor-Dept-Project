@@ -4,17 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import logo from "../../assets/logo-us-labor-dept.svg";
 import PersonIcon from '@mui/icons-material/Person';
+import { USLaborTabs } from "../../UsLaborData";
 
 function Navbar(props) {
   const { activeTab, setActiveTab } = props;
-  const tabs = [
-    "Data Validation",
-    "UIR",
-    "BAM",
-    "TPS",
-    "User recertification",
-    "Utilities"
-  ];
 
   return (
     <div className="container">
@@ -26,7 +19,7 @@ function Navbar(props) {
       </div>
       <div className="navbar-container">
         <Tabs value={activeTab} onChange={() => { }} className="navbar">
-          {tabs.map((tab, index) => {
+          {USLaborTabs.map((tab, index) => {
             return <Tab className="nav-tab" key={index} value={index} label={tab} onClick={() => setActiveTab(index)} />;
           })}
         </Tabs>

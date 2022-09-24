@@ -8,3 +8,9 @@
     margin: 0 !important;
     font-weight: 500 !important;
 }
+.active-menu{
+    background-color: #C7E7F8;
+}
+.menu:hover{
+    cursor: pointer;
+}
