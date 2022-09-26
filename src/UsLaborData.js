@@ -1,3 +1,10 @@
+import BenefitsModule from "./components/DataValidation/BenefitsModule/BenefitsModule";
+import DueItemsByValidationYear from "./components/DataValidation/DueItemsByValidationYear/DueItemsByValidationYear";
+import ResultsByPopulation from "./components/DataValidation/ResultsByPopulation/ResultsByPopulation";
+import ResultsByValidationYear from "./components/DataValidation/ResultsByValidationYear/ResultsByValidationYear";
+import TaxModule from "./components/DataValidation/TaxModule/TaxModule";
+import ValidationSoftware from "./components/DataValidation/ValidationSoftware/ValidationSoftware";
+
 export const USLaborTabs = [
     "Data Validation",
     "UIR",
@@ -100,11 +107,11 @@ export const USLaborData = {
 
 export const componentMap = {
     "Data Validation": {
-        "Validation Software": <div>Validation Software</div>,
-        "Results by Validation Year": <div>Results by Validation Year</div>,
-        "Results by Population": <div>Results by Population</div>,
-        "Due Items by Validation Year": <div>Due Items by Validation Year</div>,
-        "Benefits": <div>Benefits</div>,
-        "Tax": <div>Tax</div>
+        "Validation Software": <ValidationSoftware />,
+        "Results by Validation Year": <ResultsByValidationYear />,
+        "Results by Population": <ResultsByPopulation />,
+        "Due Items by Validation Year": <DueItemsByValidationYear />,
+        "Benefits": <BenefitsModule />,
+        "Tax": <TaxModule />
     }
 }
