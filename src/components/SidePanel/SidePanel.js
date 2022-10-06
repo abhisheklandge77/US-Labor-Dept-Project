@@ -1,20 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { USLaborData, USLaborTabs } from "../../UsLaborData";
 import AccordianMenu from "../AccordianMenu/AccordianMenu";
 import "./SidePanel.css";
 
 function SidePanel({ activeTab, activeMenu, setActiveMenu }) {
     const [searchText, setSearchText] = useState("");
+    const [UsLaborDetails, setUSLaborDetails] = useState(USLaborData[USLaborTabs[activeTab]]);
+
+    const filteredData = [];
+    const filterUSLaborDataBySearchText = (data, text) => {
+        if (data?.length) {
+            data.forEach(field => {
+                if (field.label.toLowerCase().includes(text.toLowerCase())) {
+                    filteredData.push(field);
+                }
+                if (field?.children?.length) {
+                    filterUSLaborDataBySearchText(field.children, text);
+                }
+            })
+        }
+        return filteredData;
+    };
+
+    useEffect(() => {
+        if (searchText) {
+            const filteredUSLaborData = filterUSLaborDataBySearchText(USLaborData[USLaborTabs[activeTab]], searchText);
+
+            setUSLaborDetails(filteredUSLaborData);
+        } else {
+            setUSLaborDetails(USLaborData[USLaborTabs[activeTab]]);
+        }
+    }, [searchText, activeTab]);
 
     const renderSideMenus = (activeTab) => {
         switch (USLaborTabs[activeTab]) {
             case "Data Validation": return (<div className="menu-container">
-                <AccordianMenu accordianDetails={USLaborData[USLaborTabs[activeTab]]} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+                <AccordianMenu accordianDetails={UsLaborDetails} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
             </div>);
 
             case "UIR": return (
                 <div className="menu-container">
-                    <AccordianMenu accordianDetails={USLaborData[USLaborTabs[activeTab]]} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+                    <AccordianMenu accordianDetails={UsLaborDetails} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
                 </div>
             );
 

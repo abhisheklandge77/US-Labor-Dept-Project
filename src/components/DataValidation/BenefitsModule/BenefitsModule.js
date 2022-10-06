@@ -37,7 +37,7 @@ function BenefitsModule() {
                 </tr>
                 <tr className="btn-container">
                     <td colSpan={2}><button className="btn">Submit</button>
-                        <button className="btn">Clear Query</button>
+                        <button className="btn">Clear</button>
                     </td>
                 </tr>
             </table>
