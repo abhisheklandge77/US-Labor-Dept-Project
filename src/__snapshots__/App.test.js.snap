@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for app 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="logo"
+        >
+          <img
+            alt="Logo-US-Labor-Dept"
+            src="logo-us-labor-dept.svg"
+          />
+        </div>
+        <h3>
+          U.S. DEPARTMENT OF LABOR
+        </h3>
+      </div>
+      <div
+        class="navbar-container"
+      >
+        <div
+          class="MuiTabs-root navbar css-1ujnqem-MuiTabs-root"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+            style="overflow: hidden; margin-bottom: 0px;"
+          >
+            <div
+              class="MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+              role="tablist"
+            >
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="Data Validation-id"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                Data Validation
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="UIR-id"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                UIR
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="BAM-id"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                BAM
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="TPS-id"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                TPS
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="User recertification-id"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                User recertification
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
+                datatestid="Utilities-id"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Utilities
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <span
+              class="MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+              style="left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+        <div
+          class="user-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PersonIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="main-panel-container"
+    >
+      <div
+        class="side-panel-container"
+      >
+        <h3>
+          AR - Applications Menu
+        </h3>
+        <div
+          class="searchInput-container"
+        >
+          <input
+            class="searchInput"
+            placeholder="🔎︎ Search"
+            value=""
+          />
+        </div>
+        <div
+          class="menu-container"
+        >
+          <div
+            class="accordian-menu-container"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters accordian css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+            >
+              <div
+                aria-expanded="false"
+                class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters accordian-title css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+                >
+                  <p>
+                    Data Validation
+                  </p>
+                </div>
+                <div
+                  class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ExpandMoreIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+                style="min-height: 0px;"
+              >
+                <div
+                  class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+                >
+                  <div
+                    class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+                  >
+                    <div
+                      class="MuiAccordion-region"
+                      role="region"
+                    >
+                      <div
+                        class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
+                      >
+                        <div
+                          class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                        >
+                          Validation Software
+                        </div>
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters accordian css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+                        >
+                          <div
+                            aria-expanded="false"
+                            class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters accordian-title css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+                            role="button"
+                            tabindex="0"
+                          >
+                            <div
+                              class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+                            >
+                              <p>
+                                Data Validation Reports
+                              </p>
+                            </div>
+                            <div
+                              class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                data-testid="ExpandMoreIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+                            style="min-height: 0px;"
+                          >
+                            <div
+                              class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+                            >
+                              <div
+                                class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+                              >
+                                <div
+                                  class="MuiAccordion-region"
+                                  role="region"
+                                >
+                                  <div
+                                    class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
+                                  >
+                                    <div
+                                      class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                                    >
+                                      Results by Validation Year
+                                    </div>
+                                    <div
+                                      class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                                    >
+                                      Results by Population
+                                    </div>
+                                    <div
+                                      class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                                    >
+                                      Due Items by Validation Year
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters accordian css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+                        >
+                          <div
+                            aria-expanded="false"
+                            class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters accordian-title css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+                            role="button"
+                            tabindex="0"
+                          >
+                            <div
+                              class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+                            >
+                              <p>
+                                Module 3
+                              </p>
+                            </div>
+                            <div
+                              class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                data-testid="ExpandMoreIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+                            style="min-height: 0px;"
+                          >
+                            <div
+                              class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+                            >
+                              <div
+                                class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+                              >
+                                <div
+                                  class="MuiAccordion-region"
+                                  role="region"
+                                >
+                                  <div
+                                    class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
+                                  >
+                                    <div
+                                      class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                                    >
+                                      Benefits
+                                    </div>
+                                    <div
+                                      class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
+                                    >
+                                      Tax
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tabs-panel-container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
