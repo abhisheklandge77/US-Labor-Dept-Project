@@ -1,49 +1,51 @@
-import { render, fireEvent, getByTestId, queryByTitle, findByText } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('snapshot test for app', () => {
-  const { asFragment } = render(<App />);
-  expect(asFragment()).toMatchSnapshot();
-});
+describe('App component', () => {
+  it('should match snapshot for app component', () => {
+    const { asFragment } = render(<App />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-it("should filter out search results",()=>{
-  const component = render(<App/>);
-  const searchText = component.container.querySelector('input');
-  fireEvent.change(searchText, { target: { value:'' } });
-  expect (searchText.value).toBe("");
+  it("should filter out search results", () => {
+    const component = render(<App />);
+    const searchTextInput = component.container.querySelector('input');
+    expect(searchTextInput.value).toBe("");
 
-  const result=(searchText);
-  fireEvent.change(searchText, { target: { value:'Data' } });
-  expect(result.value).toBe("Data");
-});
+    fireEvent.change(searchTextInput, { target: { value: 'Data' } });
+    expect(searchTextInput.value).toBe("Data");
 
-it("should display side pannel content on clicking navbar components",async()=>{
-  const component= render(<App/>);
-  const data_tab=component.container.getElementsByClassName("nav-tab")[0];
-  expect (data_tab.textContent).toBe("Data Validation");
-  await fireEvent.click(data_tab);
-  const accordian=component.container.querySelector('.accordian-title p');
-  expect(accordian.textContent).toBe("Data Validation");
-  //expect(accordian).toBe("");
+    const accordian = component.container.querySelector('.accordian-title p');
+    expect(accordian.textContent.includes("Data")).toBe(true);
+  });
 
-   const uir_tab=component.container.getElementsByClassName("nav-tab")[1];
-   expect (uir_tab.textContent).toBe("UIR");
-   await fireEvent.click(uir_tab);
-    const uir=component.container.querySelector('.accordian-title ');
+  it("should display side panel content on clicking navbar components", () => {
+    const component = render(<App />);
+    const dataValidationTab = component.container.getElementsByClassName("nav-tab")[0];
+    expect(dataValidationTab.textContent).toBe("Data Validation");
+    fireEvent.click(dataValidationTab);
+    const accordian = component.container.querySelector('.accordian-title p');
+    expect(accordian.textContent).toBe("Data Validation");
+
+    const uirTab = component.container.getElementsByClassName("nav-tab")[1];
+    expect(uirTab.textContent).toBe("UIR");
+    fireEvent.click(uirTab);
+    const uir = component.container.querySelector('.accordian-title ');
     expect(uir.textContent).toBe("Data Entry");
+  });
+
+  it("should render main panel on right side by clicking on menu in side panel", () => {
+    const component = render(<App />);
+
+    const accordianTitle = component.container.querySelector('.accordian-title');
+    expect(accordianTitle.textContent).toBe("Data Validation");
+    fireEvent.click(accordianTitle);
+
+    const accordianDetailsMenu = component.container.querySelector('.menu');
+    expect(accordianDetailsMenu.textContent).toBe("Validation Software");
+    fireEvent.click(accordianDetailsMenu);
+
+    const validationSoftwareTitle = component.container.querySelector('.data-validation-sub-title');
+    expect(validationSoftwareTitle.textContent).toBe("Data Validation Software");
+  });
 });
-
-it("should reender right side pannel by clicking on childeren labeled data",async()=>{
-  const component= render(<App/>);
-  const data_tab=component.container.getElementsByClassName("nav-tab")[0];
-  expect (data_tab.textContent).toBe("Data Validation");
-  
-  await fireEvent.click(data_tab);
-  const accordian=component.container.querySelector('.accordian-title p');
-  expect(accordian.textContent).toBe("Data Validation");
-
-  await fireEvent.click(accordian);
-  expect(component).toBe("");
-  // const validation=component.findAllByLabelText("Validation Software");
-  // expect(validation.textContent).toBe("validation Software");
- });

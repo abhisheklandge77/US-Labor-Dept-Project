@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot test for app 1`] = `
+exports[`App component should match snapshot for app component 1`] = `
 <DocumentFragment>
   <div
     class="App"
@@ -40,7 +40,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="true"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="Data Validation-id"
                 role="tab"
                 tabindex="0"
                 type="button"
@@ -53,7 +52,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="UIR-id"
                 role="tab"
                 tabindex="-1"
                 type="button"
@@ -66,7 +64,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="BAM-id"
                 role="tab"
                 tabindex="-1"
                 type="button"
@@ -79,7 +76,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="TPS-id"
                 role="tab"
                 tabindex="-1"
                 type="button"
@@ -92,7 +88,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="User recertification-id"
                 role="tab"
                 tabindex="-1"
                 type="button"
@@ -105,7 +100,6 @@ exports[`snapshot test for app 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary nav-tab css-1h9z7r5-MuiButtonBase-root-MuiTab-root"
-                datatestid="Utilities-id"
                 role="tab"
                 tabindex="-1"
                 type="button"

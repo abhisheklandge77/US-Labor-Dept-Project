@@ -20,7 +20,7 @@ function Navbar(props) {
       <div className="navbar-container">
         <Tabs value={activeTab} onChange={() => { }} className="navbar">
           {USLaborTabs.map((tab, index) => {
-            return <Tab className="nav-tab" key={index} value={index} label={tab} dataTestId={`${tab}-id`} onClick={() => setActiveTab(index)} />;
+            return <Tab className="nav-tab" key={index} value={index} label={tab} onClick={() => setActiveTab(index)} />;
           })}
         </Tabs>
         <div className="user-icon">
