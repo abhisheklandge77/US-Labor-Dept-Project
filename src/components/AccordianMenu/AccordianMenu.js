@@ -17,12 +17,12 @@ function AccordianMenu(props) {
               <p>{record?.label}</p>
             </AccordionSummary>
             <AccordionDetails className="accordian-details">
-              {renderNestedAccordian(record?.children)}
+              <p>{renderNestedAccordian(record?.children)}</p>
             </AccordionDetails>
           </Accordion>)
         } else {
           return <AccordionDetails className={activeMenu === record?.label ? "active-menu menu": "menu"} onClick={() => setActiveMenu(record?.label)}>
-            {record?.label}
+            <p>{record?.label}</p>
             </AccordionDetails>
         }
       })

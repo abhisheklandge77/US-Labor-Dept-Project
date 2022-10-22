@@ -6,7 +6,7 @@ function UnemploymentInsuranceReports() {
     const [password,setPassword] = useState("");
     return (
         <div className="uir-container">
-            <h2 className="uir-title">UNEMPLOYMENT INSURANCE REPORTS</h2>
+            <h2 className="uir-title"><p>UNEMPLOYMENT INSURANCE REPORTS</p></h2>
             <div className="uir-form">
                 <table>
                     <tbody>

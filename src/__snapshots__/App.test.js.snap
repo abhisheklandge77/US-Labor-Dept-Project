@@ -212,10 +212,13 @@ exports[`snapshot test for app 1`] = `
                       <div
                         class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
                       >
+                        <p />
                         <div
                           class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                         >
-                          Validation Software
+                          <p>
+                            Validation Software
+                          </p>
                         </div>
                         <div
                           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters accordian css-1elwnq4-MuiPaper-root-MuiAccordion-root"
@@ -266,21 +269,29 @@ exports[`snapshot test for app 1`] = `
                                   <div
                                     class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
                                   >
+                                    <p />
                                     <div
                                       class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                                     >
-                                      Results by Validation Year
+                                      <p>
+                                        Results by Validation Year
+                                      </p>
                                     </div>
                                     <div
                                       class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                                     >
-                                      Results by Population
+                                      <p>
+                                        Results by Population
+                                      </p>
                                     </div>
                                     <div
                                       class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                                     >
-                                      Due Items by Validation Year
+                                      <p>
+                                        Due Items by Validation Year
+                                      </p>
                                     </div>
+                                    <p />
                                   </div>
                                 </div>
                               </div>
@@ -336,22 +347,29 @@ exports[`snapshot test for app 1`] = `
                                   <div
                                     class="MuiAccordionDetails-root accordian-details css-15v22id-MuiAccordionDetails-root"
                                   >
+                                    <p />
                                     <div
                                       class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                                     >
-                                      Benefits
+                                      <p>
+                                        Benefits
+                                      </p>
                                     </div>
                                     <div
                                       class="MuiAccordionDetails-root menu css-15v22id-MuiAccordionDetails-root"
                                     >
-                                      Tax
+                                      <p>
+                                        Tax
+                                      </p>
                                     </div>
+                                    <p />
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
+                        <p />
                       </div>
                     </div>
                   </div>
